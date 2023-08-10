@@ -15,6 +15,7 @@
 
 .cart-name {
     margin-top: 0;
+    margin-bottom: 0;
     font-family: Lato;
     font-size: 21px;
     font-style: normal;
@@ -27,6 +28,9 @@
 .cart-info {
     margin-left: 14px;
 }
+.cart-info p{
+    margin-top: 5px;
+}
 
 .cart-btn {
     border-radius: 0px 0px 8px 8px;
@@ -36,4 +40,7 @@
     position: absolute;
     bottom: 0;
     outline: none;
+}
+.cart-btn:hover{
+    background-color: coral;
 }

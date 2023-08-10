@@ -4,6 +4,8 @@ import Product from '../Product/Product';
 // import fakeData from '../../../fakeData/products.json';
 const Shop = () => {
     const [products, setProducts] = useState([])
+    const [cartItem, setCartItem] = useState([])
+
 
     useEffect(()=>{
         fetch('products.json')
@@ -12,16 +14,23 @@ const Shop = () => {
         
     }, [])
 
+    const handleAddToCart=(product)=>{
+        const newCartItem = [...cartItem, product];
+        setCartItem(newCartItem);
+        console.log(newCartItem)
+    }
+
     
     return (
         <div className='shop-container'>
             <div className='product-container'>
             {
-                products.map((product)=>(<Product product={product} key={product.id}></Product>))
+                products.map((product)=>(<Product product={product} key={product.id} handleAddToCart={handleAddToCart}></Product>))
             }
             </div>
             <div className='cart-container'>
-                <h3>Order Summary</h3>
+                <h2>Order Summary</h2>
+                <p>Selected Items: {cartItem.length}</p>
             </div>                
             
         </div>

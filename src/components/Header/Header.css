@@ -1,0 +1,19 @@
+.header{
+    height: 80px;    
+    background-color: #1C2B35;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img{
+    padding-left: 30px;
+}
+.header ul{
+    text-decoration: none;
+}
+.header ul li{
+    list-style-type: none;
+    color: #fff;
+    display: inline-block;
+    padding-right: 20px;  
+}

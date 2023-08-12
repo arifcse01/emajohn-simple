@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;    
 }
 .header img{
     padding-left: 30px;

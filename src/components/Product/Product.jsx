@@ -5,9 +5,9 @@ import { faCoffee, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
 const Product = (props) => {
-    const { img, id, category, name, seller, price, ratings } = props.product;
+    const { img, category, name, seller, price, ratings } = props.product;
     const handleAddToCart = props.handleAddToCart;
-    
+
     return (
         <div className='cart'>
             <img src={img} alt="" />
